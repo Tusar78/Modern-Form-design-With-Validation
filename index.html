@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="form-width">
+        <div class="form-wrap">
+            <div class="left-side">
+                <div class="logo">
+                    <a href="#"><img src="assets/images/logo.png" alt="website logo"></a>
+                </div>
+                <div class="heading">
+                    <h2>Lest's Get <br> Started now!</h2>
+                    <p>Get extra benifit from our</p>
+                    <p>best services.</p>
+                </div>
+                <div class="art-image">
+                    <img src="assets/images/495182-PI2C9Y-951.png" alt="art images">
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="heading">
+                    <h2>Crate and Account</h2>
+                </div>
+                <form id="custom-form">
+                    <div class="form-control">
+                        <label for="name">Name: </label>
+                        <input type="text" placeholder="Ex. John" id="name" required="1">
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email: </label>
+                        <input type="email"  id="email" placeholder="Ex. john@gmail.com"required="1">
+                        <span id="emailMessege"></span>
+                    </div>
+                    <div class="form-control password">
+                        <label for="password">Password: </label>
+                        <input type="password" id="password" placeholder="Type Valid Password"required="1">
+                        <span id="emailMessege1"></span>
+                        <img id="showHide" toggle="#password" src="assets/images/hide.png" alt="">
+                    </div>
+                    <div class="form-control">
+                        <input type="checkbox">
+                        <span>By clicking Sign up you agree to our <a href="#">Terms & Condition</a></span>
+                    </div>
+                    <div class="form-control">
+                        <input type="submit" id="submit" value="Sign Up">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/validation.js"></script>
+</body>
+</html>
